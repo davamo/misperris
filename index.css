@@ -1,0 +1,13 @@
+:root {
+    --colorheader: #85D4B7;
+    --colornavbar: #85D4B7;
+    --colorfondo: #6DCCAA; 
+    --colorfooter: #E6E6E6;
+    --colorquienes: #ffffff;
+    --colorblanco: #ffffff;
+}
+
+body {
+    display: block;
+    text-align: center;
+}
