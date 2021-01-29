@@ -21,7 +21,8 @@ header {
 }
 
 .logo {
-    padding: 30px 0px 0px 0px;
+  width: 80%;
+  padding: 30px 0px 0px 0px;
 }
 
 .cabecera {
@@ -37,6 +38,7 @@ header {
 ul {
   background-color: #69bfa0;
 }
+
 .menu li {
   display: inline-block;
   background-color: transparent;
@@ -49,7 +51,7 @@ ul {
   border-bottom: 1px solid #85d4b8;
   -webkit-transition: none;
   transition: none;
-  padding: 20px 10px 20px 0px;
+  padding: 20px 0px 10px 0px;
 }
 
 a {
@@ -62,12 +64,51 @@ a {
   width: 100%;
 }
 
+.carrusel {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 60%;
+  left: 10px;
+  font-size: 80%;
+}
+
+.button-izquierda {
+  position: absolute;
+  background-color: var(--colorblanco);
+  color: var(--colornavbar);
+  width: 30px;
+  height: 30px;
+  border: transparent;
+  border-radius: 50px;
+  top: 40%;
+  left: 10px;
+  font-size: 80%;
+}
+
+.button-derecha {
+  position: absolute;
+  background-color: var(--colorblanco);
+  color: var(--colornavbar);
+  width: 30px;
+  height: 30px;
+  border: transparent;
+  border-radius: 50px;
+  top: 40%;
+  right: 10px;
+  font-size: 80%;
+}
+
 .socialmedia {
-    padding: 20px;
+  padding: 20px;
 }
 
 .circular {
-  background-color: white;
+  background-color: var(--colorblanco);
   width: 50px;
   height: 50px;
   border: transparent;
@@ -75,11 +116,106 @@ a {
 }
 
 .fa {
-  color: #6eccaa;
+  color: var(--colorfondo);
   width: 45%;
 }
 
+.quienensomos {
+  background-color: var(--colorblanco);
+}
+
+.imagerescate {
+  width: 50%;
+}
+
+.rescate {
+  font-size: 50%;
+  text-align: end;
+  padding: 10px;
+}
+
+.crowfunding {
+  font-size: 50%;
+  text-align: initial;
+  padding: 10px;
+}
+
+.imagecrowfunding {
+  width: 50%;
+}
+
+.bottomblanconegro {
+  background-color: var(--colorblanco);
+  padding: 5px;
+  font-size: 80%;
+}
+
+.piedepagina {
+  background-color: var(--colorfooter);
+  font-size: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 65px 65px 65px 65px 65px 65px;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 5px solid #6eccaa;
+  text-align: center;
+  color: floralwhite;
+}
+
+.grid-item:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-image: url(./Oso_tn.jpg);
+}
+
+.grid-item:nth-child(2) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  background-image: url(./Maya_tn.jpg);
+}
+
+.grid-item:nth-child(3) {
+  grid-column: 1 / 2;
+  grid-row: 5 / 7;
+  background-image: url(./Wifi_tn.jpg);
+}
+
+.grid-item:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  background-image: url(./Chocolate_tn.jpg);
+}
+
+.grid-item:nth-child(5) {
+  grid-column: 2 / 3;
+  grid-row: 4 / 7;
+  background-image: url(./Pexel_tn.jpg);
+}
+
+.grid-item:nth-child(6) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+  background-image: url(./Bigotes_tn.jpg);
+}
+
+.grid-item:nth-child(7) {
+  grid-column: 3 / 4;
+  grid-row: 4 / 7;
+  background-image: url(./Luna_tn.jpg);
+}
+
 @media (min-width: 400px) {
+  .logo {
+    width: 30%;
+    padding: 30px 0px 0px 0px;
+  }
+
   .menu {
     background-color: transparent;
     text-decoration: none;
@@ -89,120 +225,6 @@ a {
   .menu li {
     display: inline-block;
     text-align: center;
-<<<<<<< HEAD
-}
-
-
-.circulo3 {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    background: white;
-    display: inline-block;
-    padding: 15px 15px 15px 15px;
-    border-radius: 25px;
-    color: #69BFA0;
-    text-align: center;
-
-}
-
-/* galeria de imagenes */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
-}
-
-.grid-item {
-    border: 1px solid black;
-    text-align: center;
-    color: floralwhite;
-}
-
-.grid-item:nth-child(1) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    background-image: url(./Oso_tn.jpg);
-} 
-
-.grid-item:nth-child(2) {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    background-image: url(./Maya_tn.jpg);
-} 
-
-.grid-item:nth-child(3) {
-    grid-column: 1 / 2;
-    grid-row: 5 / 7;
-    background-image: url(./Wifi_tn.jpg);
-}
-
-.grid-item:nth-child(4) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    background-image: url(./Chocolate_tn.jpg);
-}
-
-.grid-item:nth-child(5) {
-    grid-column: 2 / 3;
-    grid-row: 4 / 7;
-    background-image: url(./Pexel_tn.jpg);
-}
-
-.grid-item:nth-child(6) {
-    grid-column: 3 / 4;
-    grid-row: 1 / 4;
-    background-image: url(./Bigotes_tn.jpg);
-}
-
-.grid-item:nth-child(7) {
-    grid-column: 3 / 4;
-    grid-row: 4 / 7;
-    background-image: url(./Luna_tn.jpg);
-}
-
-
-
-@media (min-width: 401px) {
-    .grid-item:nth-child(1) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 3;
-    } 
-    
-    .grid-item:nth-child(2) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-    } 
-    
-    .grid-item:nth-child(3) {
-        grid-column: 3 / 4;
-        grid-row: 1 / 3;
-    }
-    
-    .grid-item:nth-child(4) {
-        grid-column: 4 / 5;
-        grid-row: 1 / 3;
-    }
-    
-    .grid-item:nth-child(5) {
-        grid-column: 5 / 6;
-        grid-row: 1 / 3;
-    }
-    
-    .grid-item:nth-child(6) {
-        grid-column: 6 / 7;
-        grid-row: 1 / 3;
-    }
-    
-    .grid-item:nth-child(7) {
-        grid-column: 7 / 8;
-        grid-row: 1 / 3;
-    }
-    
-
-}
-=======
     vertical-align: top;
     width: 8em;
     background: transparent;
@@ -211,5 +233,62 @@ a {
     -webkit-transition: none;
     transition: none;
   }
+
+  .imagerescate {
+    width: 60%;
+  }
+
+  .rescate {
+    font-size: 70%;
+    padding: 30px;
+  }
+
+  .crowfunding {
+    font-size: 70%;
+    padding: 30px;
+  }
+
+  .imagecrowfunding {
+    width: 60%;
+  }
+
+  .bottomblanconegro {
+    padding: 5px;
+    font-size: 100%;
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .grid-item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+
+  .grid-item:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+  }
+
+  .grid-item:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .grid-item:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 6;
+  }
+
+  .grid-item:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+  }
+
+  .grid-item:nth-child(7) {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  }
 }
->>>>>>> 72d0164019ca354568a441b9b4e000566c13d433
